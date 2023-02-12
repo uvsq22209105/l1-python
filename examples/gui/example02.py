@@ -13,6 +13,7 @@ class MonDessin(Canvas):
     def onLeftClick(self, event):
         self.lastx, self.lasty = event.x, event.y
 
+
     def onMouseMove(self, event):
         self.create_line((self.lastx, self.lasty, event.x, event.y))
         self.lastx, self.lasty = event.x, event.y
